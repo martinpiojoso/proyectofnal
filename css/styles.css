@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -121,12 +122,12 @@ ul {
 ul li {
   margin: 20px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 ul li :hover {
   background: white;
-  font-size: 30px;
+  font-size: 25px;
   border-radius: 5px;
 }
 
@@ -166,7 +167,7 @@ ul li :hover {
 p {
   font-size: 25px;
   margin: 10px 10px;
-  line-height: 1, 5em;
+  line-height: 1em, 3em;
   text-align: center;
   letter-spacing: 2px;
   word-spacing: 0,5em;
@@ -179,22 +180,38 @@ p {
   margin: 0px auto;
 }
 
-.footer-container {
-  width: 100%;
-  background: #bedf80;
-  height: 50px;
+.main-container-formulario {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
 }
 
-.footer-container .P_container {
+.main-container-formulario .form-title {
+  text-align: center;
+  font-size: 2rem;
+  color: red;
+}
+
+.main-container-formulario .form-title .container-grupo {
+  -webkit-box-shadow: 0px 10px 10px black;
+          box-shadow: 0px 10px 10px black;
+  padding: 5em;
+}
+
+.main-container-formulario .form-title .container-grupo .container-info {
+  background: #b67575;
+}
+
+.footer-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #ddedbd;
+  height: 120px;
+}
+
+.footer-container p {
   font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 /*# sourceMappingURL=styles.css.map */

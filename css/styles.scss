@@ -1,4 +1,5 @@
 @import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 
 * {
   margin: 0px;
@@ -65,12 +66,12 @@ h1{
         }
     } 
 
-
+// Redes
 .redes {
     
     width: 100%;
     display:flex;
-     justify-content:center;
+    justify-content:center;
     align-items: flex-end;
     
        a{  
@@ -78,13 +79,13 @@ h1{
          padding: 5px;
            img{
             width: 30px;
-            
-          }
-      }
-   
+            }
+       }
   }
-    ul{
-       
+
+  // Nav 
+    
+  ul{
       margin: 10px;
       background: rgb(231, 233, 228);
       border-radius: 10px;
@@ -94,11 +95,11 @@ h1{
         li {
             margin: 20px;
             text-decoration: none;
-            font-size: 25px;
+            font-size: 20px;
            
             :hover {
               background: white;
-              font-size: 30px;
+              font-size: 25px;
               border-radius: 5px;
         
             }
@@ -106,20 +107,16 @@ h1{
           }
  
   
-    
+    // Main inicio
    .main-container{
      display: flex;
      flex-direction: column;
      justify-content: center;
-    //  background: #b5c5c5;
+     width: 100%;
+     height: auto;
+     padding: 20px;
      
-
-      width: 100%;
-      height: auto;
-      padding: 20px;
-     
-      h2 {
-        // background: white;
+      h2  {
         margin-bottom:  20px;
         margin-top: 10px;
         display: flex;
@@ -131,38 +128,58 @@ h1{
       }  
     
   }
-    p {
+      p {
       font-size: 25px;
       margin: 10px 10px;
-      line-height: 1, 5em;
+      line-height: 1em, 3em;
       text-align: center;
       letter-spacing: 2px;
       word-spacing: 0,5em;
       text-transform: lowercase;
-      
-    }
-
-        .main_foto {
-          
-          width: 300px;
-          height: 400px;
-          margin: 0px auto;
-
-    
-        }
-      
-    .footer-container{
-      // display: flex;
-      width: 100%;
-     background: rgb(190, 223, 128);
-      height: 50px;
-      .P_container{
-        font-size: 20px;
-        display: flex;
-        justify-content:center;
-        align-items: flex-end;
-
-       
-        
       }
+
+  .main_foto {
+    
+    width: 300px;
+    height: 400px;
+    margin: 0px auto;
+}
+
+// contacto
+.main-container-formulario{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    
+    .form-title {
+      text-align: center;
+      font-size: 2rem;
+      color:red;
+      
+      .container-grupo {
+        box-shadow:0px 10px 10px black;
+        padding:5em ;
+      
+        
+        .container-info{
+          background:rgb(182, 117, 117) ;
+
+     }
     }
+  }
+}
+      
+.footer-container{
+      display: block;
+      width:100%;
+      height: auto;
+      background: rgb(221, 237, 189);
+      height: 120px;
+      p {
+        font-size: 20px;
+         }
+  }
+      
+        
+    
