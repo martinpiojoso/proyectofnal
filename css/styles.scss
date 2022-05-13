@@ -77,24 +77,29 @@ h1{
   
 
   // Nav 
-    
-ul .nav-container{
+   
+   
+
+   
+
+  ul {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
       margin: 10px;
-      background: rgb(231, 233, 228);
-      border-radius: 40px;
+      background: rgb(234, 238, 228);
+      border-radius: 30px;
       
         li a {
             display: flex;
-            justify-content: center;
+            justify-content:flex-start;
             align-items: center;
-            margin: 20px;
+            margin: 10px;
             text-decoration: none;
             font-size: 20px;
            
-            :hover {
+           a :hover {
               background: white;
               font-size: 25px;
               border-radius: 5px;
@@ -102,6 +107,22 @@ ul .nav-container{
             }
            }
           }
+    .main-container-servicios{
+      margin: 0 auto;
+      height:90% ;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .title{
+        color:red;
+        align-items: center;
+      }
+    
+    }
+
+
  
   
     // Main inicio
@@ -144,19 +165,26 @@ ul .nav-container{
 
 // contacto
  main .main-container-formulario{
-    background: yellowgreen;
+    background: white;
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
     
+    .container-grupo{
+      background:rgb(191, 213, 243) ;
+      align-items: center;
+
+    }
+    
     .form-title {
       text-align: center;
       font-size: 2rem;
-      color:rgb(16, 11, 11);
+      color:rgb(231, 26, 26);
     }
   }
- 
+
+      
 
 // Pie de Pagina
  .pie-pagina {
@@ -165,7 +193,7 @@ ul .nav-container{
    color:white;
  }
 
- .pie-pagina .grupo-1 {
+.pie-pagina .grupo-1 {
    width: 100%;
    max-width: 1100px;
    margin: auto;
@@ -223,12 +251,8 @@ ul .nav-container{
      padding: 25px 0px;
    }
  }
-    @media  screen and (max-width: 600px) {
-      nav-container {
-        display: flex;
-        flex-direction: column;
-  
-      }
 
-      
- 
+    //  @media  screen and (max-width: 600px) {
+      //  nav-container {
+        //  display: flex;
+        //  flex-direction: row;
