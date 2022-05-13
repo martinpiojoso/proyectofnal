@@ -162,6 +162,20 @@ h1{
     height: 400px;
     margin: 0px auto;
 }
+.ubicacion{
+  text-align: center;
+
+}
+
+.carousel-inner{
+  width: 90%;
+  margin: auto;
+    
+  .carousel-item active{
+      width: 100%;
+      margin: auto;
+    }
+}
 
 // contacto
  main .main-container-formulario{
@@ -252,7 +266,10 @@ h1{
    }
  }
 
-    //  @media  screen and (max-width: 600px) {
-      //  nav-container {
-        //  display: flex;
-        //  flex-direction: row;
+     @media  screen and (max-width: 600px) {
+         .nav-container {
+         display: flex;
+         flex-direction: column;
+         align-items:flex-start;
+      }
+    }
